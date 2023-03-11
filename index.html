@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Document</title>
+
+	<link rel="stylesheet" href="css/main.css">
+
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="libs/gsap/gsap.min.js" defer></script>
+	<script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+	<script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+	<script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+
+	<script src="js/app.js" defer></script>
+
+</head>
+
+<body>
+
+
+	<!--Side Navbar-->
+
+
+	<div class="sidebar">
+		<div class="logo-details">
+			<i class='bx bxl-c-plus-plus icon'></i>
+			<div class="logo_name">Codewezi</div>
+			<i class='bx bx-menu' id="btn"></i>
+		</div>
+		<br>
+
+		<ul class="nav-list">
+			<li>
+				<i class='bx bx-search'></i>
+				<input type="text" placeholder="Search...">
+				<span class="tooltip">Search</span>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bx-grid-alt'></i>
+					<span class="links_name">Home</span>
+				</a>
+				<span class="tooltip">Home</span>
+			</li>
+			<li>
+				<a href="#about">
+					<i class='bx bx-user'></i>
+					<span class="links_name">About</span>
+				</a>
+				<span class="tooltip">About</span>
+			</li>
+			<li>
+				<a href="#skills">
+					<i class='bx bx-pie-chart-alt-2'></i>
+					<span class="links_name">Skills</span>
+				</a>
+				<span class="tooltip">Skills</span>
+			</li>
+			<li>
+				<a href="#contact">
+					<i class='bx bx-chat'></i>
+					<span class="links_name">Contact us</span>
+				</a>
+				<span class="tooltip">Contact us</span>
+			</li>
+			<li>
+				<a href="#resume">
+					<i class='bx bx-folder'></i>
+					<span class="links_name">Resume</span>
+				</a>
+				<span class="tooltip">Resume</span>
+			</li>
+			
+			
+			<!--Social media icon on navbar-->
+			
+			<br>
+
+
+			<li id="siz">
+				<a href="https://instagram.com/ismart__shreyash_24?igshid=YmMyMTA2M2Y=">
+					<img src="img/instagram.png" id="tool">
+					<span class="links_name">Instagram</span>
+				</a>
+				<span class="tooltip">Instagram</span>
+			</li>
+			<li id="siz">
+				<a href="https://t.me/codewezi">
+					<img src="img/telegram.png" id="tool">
+					<span class="links_name">Telegram</span>
+				</a>
+				<span class="tooltip">Telegram</span>
+			</li>
+			<li id="siz">
+				<a href="codewezi@gmail.com">
+					<img src="img/gmail.png" id="tool">
+					<span class="links_name">Gmail</span>
+				</a>
+				<span class="tooltip">Gmail</span>
+			</li>
+
+<!--profile on navbar-->
+
+			<li class="profile">
+				<div class="profile-details">
+					<div class="name_job">
+						<div class="name">Shreyash Telange</div>
+						<div class="job">Web designer</div>
+					</div>
+				</div>
+				<i class='bx bx-log-out' id="log_out"></i>
+			</li>
+		</ul>
+	</div>
+
+
+
+
+
+
+
+
+
+	<section class="home-section">
+
+
+
+		<!--home page-->
+
+		<div class="wrapper">
+			<div class="content">
+
+				<header class="main-header">
+					<div class="layers">
+						<div class="layer__header">
+							<div class="layers__caption">Wellcome to My World</div>
+							<div class="layers__title">Shreyash Telange</div>
+						</div>
+						<div class="layer layers__base" style="background-image: url(img/layer-base.png);"></div>
+						<div class="layer layers__middle" style="background-image: url(img/layer-middle.png);"></div>
+						<div class="layer layers__front" style="background-image: url(img/layer-front.png);"></div>
+					</div>
+				</header>
+
+
+
+<!--About page-->
+
+
+
+				<article class="main-article" style="background-image: url(img/dungeon.jpg);">
+					<div class="container" id="about" >
+						<div class="card">
+							<div class="card__border">
+								<div class="card__perfil">
+									<img src="img/Subject.png" alt="card image" class="card__img">
+								</div>
+							</div>
+							<h3 class="card__name">Shreyash Telange</h3>
+							<span class="card__profession">Frontend Devloper</span>
+
+							<div class="info">
+								<div class="info__icon">
+									<img src="img/info-button.png">
+								</div>
+
+								<div class="info__border">
+									<div class="info__perfil">
+										<img src="img/Subject.png" alt="card image " class="info__img">
+									</div>
+								</div>
+
+								<div class="info__data">
+									<h3 class="info__name">Shreyash Bhimrao Telange</h3>
+									<span class="info__profession">Master in Frontend Developer</span>
+									<span class="info__location">India</span>
+								</div>
+
+								<div class="info__social">
+									<a href="https://www.linkedin.com/in/shreyash-telange-302889243" target="_blank" class="info__social-link">
+										<span class="info__social-icon">
+											<img src="img/linkedin.png">
+										</span>
+									</a>
+
+									<a href="https://github.com/Codewezi" target="_blank" class="info__social-link">
+										<span class="info__social-icon">
+											<img src="img/github.png">
+										</span>
+									</a>
+
+									<a href="https://twitter.com/shreyashtelang1?s=11" target="_blank" class="info__social-link">
+										<span class="info__social-icon">
+											<img src="img/twitter.png">
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+
+
+
+
+<!--Skills page-->
+
+
+
+
+				<article class="main-article" style="background-image: url(img/dungeon.jpg);">
+
+
+
+
+
+					<section class="mh-skills" id="skills">
+						<div class="container-2">
+							<div class="row">
+								<div class="col-sm-12 col-md-6">
+									<div class="mh-skills-inner">
+										<div class="mh-professional-skill">
+											<h3>Technical Skills</h3>
+											<div class="each-skills">
+												<div class="candidatos">
+													<div class="parcial">
+														<div class="info-2">
+															<div class="nome">Html5/Css3</div>
+															<div class="percentage-num">86%</div>
+														</div>
+														<div class="progressBar">
+															<div class="percentagem" style="width: 86%;"></div>
+														</div>
+													</div>
+												</div>
+
+												<div class="candidatos">
+													<div class="parcial">
+														<div class="info-2">
+															<div class="nome">Javascript</div>
+															<div class="percentage-num">55%</div>
+														</div>
+														<div class="progressBar">
+															<div class="percentagem" style="width: 55%;"></div>
+														</div>
+													</div>
+												</div>
+
+												<div class="candidatos">
+													<div class="parcial">
+														<div class="info-2">
+															<div class="nome">Python</div>
+															<div class="percentage-num">66%</div>
+														</div>
+														<div class="progressBar">
+															<div class="percentagem" style="width: 66%;"></div>
+														</div>
+													</div>
+												</div>
+
+												<div class="candidatos">
+													<div class="parcial">
+														<div class="info-2">
+															<div class="nome">Php</div>
+															<div class="percentage-num">50%</div>
+														</div>
+														<div class="progressBar">
+															<div class="percentagem" style="width: 50%;"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-sm-12 col-md-6">
+									<div class="mh-professional-skills">
+										<h3>Professional Skills</h3>
+										<ul class="mh-professional-progress">
+											<li>
+												<div class="mh-progress mh-progress-circle" data-progress="80"></div>
+												<div class="pr-skill-name">Communication</div>
+											</li>
+
+											<li>
+												<div class="mh-progress mh-progress-circle" data-progress="66"></div>
+												<div class="pr-skill-name">Team Work</div>
+											</li>
+
+											<li>
+												<div class="mh-progress mh-progress-circle" data-progress="90"></div>
+												<div class="pr-skill-name">Project Managment</div>
+											</li>
+
+											<li>
+												<div class="mh-progress mh-progress-circle" data-progress="85"></div>
+												<div class="pr-skill-name">Creativity</div>
+											</li>
+
+										</ul>
+
+									</div>
+
+								</div>
+
+
+
+
+
+
+
+							</div>
+						</div>
+					</section>
+
+
+
+
+
+
+
+
+				</article>
+
+
+
+<!--Contact us page-->
+
+
+
+
+				<article class="main-article" style="background-image: url(img/dungeon.jpg);">
+
+
+
+					<div class="container-3" id="contact">
+						<div class="form">
+							<div class="contact-info-2">
+								<h3 class="title">Let's get in touch</h3>
+								<p class="text-2">
+									Want to get in touch?We'd love to hear from you. Here's how you can reach us.
+								</p>
+
+								<div class="info-2">
+									<div class="information">
+										<img src="img/location.png" class="icon" alt="" />
+										<p> Nanded Maharashtra India </p>
+									</div>
+									<div class="information">
+										<img src="img/email.png" class="icon" alt="" />
+										<p>codewezi@gmail.com , shreyashtelange0@gmail.com
+										</p>
+									</div>
+									<div class="information">
+										<img src="img/phone.png" class="icon" alt="" />
+										<p>91-7387090721 , 91-7350421591</p>
+									</div>
+								</div>
+
+								<div class="social-media">
+									<p>Connect with us :</p>
+									<div class="social-icons">
+										<a href="https://www.facebook.com/profile.php?id=100083372577082">
+											<i class="fab fa-facebook-f"></i>
+										</a>
+										<a href="https://twitter.com/shreyashtelang1?s=11">
+											<i class="fab fa-twitter"></i>
+										</a>
+										<a href="https://instagram.com/ismart__shreyash_24?igshid=YmMyMTA2M2Y=">
+											<i class="fab fa-instagram"></i>
+										</a>
+										<a href="https://www.linkedin.com/in/shreyash-telange-302889243">
+											<i class="fab fa-linkedin-in"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+
+
+
+							<div class="contact-form">
+								<span class="circle one"></span>
+								<span class="circle two"></span>
+
+
+
+
+								<form action="https://formspree.io/f/xgebyrbv" method="post">
+									<form action="index.html" autocomplete="off">
+										<h3 class="title">Contact us</h3>
+										<div class="input-container">
+											<input type="text" name="name" class="input" />
+											<label for="">Username</label>
+											<span>Username</span>
+										</div>
+										<div class="input-container">
+											<input type="email" name="email" class="input" />
+											<label for="">Email</label>
+											<span>Email</span>
+										</div>
+										<div class="input-container">
+											<input type="tel" name="phone" class="input" />
+											<label for="">Phone</label>
+											<span>Phone</span>
+										</div>
+										<div class="input-container textarea">
+											<textarea name="message" class="input"></textarea>
+											<label for="">Message</label>
+											<span>Message</span>
+										</div>
+										<input type="submit" value="Send" class="btn" />
+									</form>
+							</div>
+						</div>
+					</div>
+					</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				</article>
+
+
+
+
+<!--resume page-->
+
+
+
+				<article class="main-article" style="background-image: url(img/dungeon.jpg);">
+					<div class="container-4">
+
+						<div class="card-2" id="resume">
+							<div class="lines"></div>
+							<div class="imgBx">
+								<img src="img/curriculum-vitae.png">
+							</div>
+							<div class="content-2">
+								<div class="details">
+									<h2 class="h2-2">CV</h2>
+									<p>To secure a challenging position in a reputable organization to expand my
+										learnings, knowledge, and skills.</p>
+									<a href="pdf/31E70C2E-228F-48CF-A007-7ADE55ED7257.pdf" download='CV'
+										class="download-btn">Download CV</a>
+								</div>
+							</div>
+						</div>
+
+
+
+
+					</div>
+					<div class="copy">© Codewezi</div>
+				</article>
+
+
+
+
+
+
+
+
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script src="js/circle-progress.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+
+
+
+
+	<script>
+		let sidebar = document.querySelector(".sidebar");
+		let closeBtn = document.querySelector("#btn");
+		let searchBtn = document.querySelector(".bx-search");
+
+		closeBtn.addEventListener("click", () => {
+			sidebar.classList.toggle("open");
+			menuBtnChange();//calling the function(optional)
+		});
+
+		searchBtn.addEventListener("click", () => { // Sidebar open when you click on the search iocn
+			sidebar.classList.toggle("open");
+			menuBtnChange(); //calling the function(optional)
+		});
+
+		// following are the code to change sidebar button(optional)
+		function menuBtnChange() {
+			if (sidebar.classList.contains("open")) {
+				closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+			} else {
+				closeBtn.classList.replace("bx-menu-alt-right", "bx-menu");//replacing the iocns class
+			}
+		}
+	</script>
+
+
+
+	<script>
+		const inputs = document.querySelectorAll(".input");
+
+		function focusFunc() {
+			let parent = this.parentNode;
+			parent.classList.add("focus");
+		}
+
+		function blurFunc() {
+			let parent = this.parentNode;
+			if (this.value == "") {
+				parent.classList.remove("focus");
+			}
+		}
+
+		inputs.forEach((input) => {
+			input.addEventListener("focus", focusFunc);
+			input.addEventListener("blur", blurFunc);
+		});
+	</script>
+
+
+
+
+
+</body>
+
+</html>
